@@ -136,31 +136,59 @@ console.log(x, y); // x=10, y=10
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 
+
+// STRINGS AND TEMPLATE LITERALS
+
+/*
+const firstName = "Jonas";
+const job = "teacher";
+const birthYear = 1991;
+const currentYear = 2037;
+const jonas =
+  "I'm " +
+  firstName +
+  ", a " +
+  (currentYear - birthYear) +
+  " years old " +
+  job +
+  "!";
+
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName} a ${
+  currentYear - birthYear
+} years old ${job}!`;
+console.log(jonasNew);
+
+console.log(`Some
+New Line
+Text`);
+
 */
-// TASKS
 
-// const country = "Poland";
-// const continent = "Europe";
-// let population = 36;
-// const isIsland = false;
-// let language = "Polish";
-// const description =
-//   "Portugal is in " + continent + " and its 11 milion people speak portuguese";
+//TAKING DECISIONS IF/ELSE
 
-// console.log(country);
-// console.log(continent);
-// console.log(population);
-// console.log(isIsland);
-// console.log(language);
+// const age = 15;
 
-// console.log(population / 2);
-// console.log((population += 1));
-// console.log(population > 6);
-// console.log(population < 33);
-// console.log(description);
+// if (age >= 19) {
+//   console.log("Can start driving license");
+// } else {
+//   const yearsLeft = 18 - age;
+//   console.log(`Sarah is too young. Wait another ${yearsLeft} years`);
+// }
 
-//CODE CHALLENGES
-//1.
+// const birthYear = 2021;
+// let century;
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+
+// console.log(century);
+
+// CODING CHELLANGE 2
+
 // const markMass = 78;
 // const markHeight = 1.69;
 // const johnMass = 92;
@@ -168,11 +196,40 @@ console.log(ageJonas, ageSarah, averageAge);
 
 const markMass = 95;
 const markHeight = 1.88;
-const johnMass = 85;
+const johnMass = 200;
 const johnHeight = 1.76;
 
 const markBMI = markMass / markHeight ** 2;
 const johnBMI = johnMass / johnHeight ** 2;
 const markHigherBMI = markBMI > johnBMI;
 
-console.log(markBMI, johnBMI, markHigherBMI);
+// if (markHigherBMI) {
+//   console.log(`Mark's BMI is higher then Mark's`);
+// } else {
+//   console.log(`John's BMI is higher then Mark's`);
+// }
+
+if (markHigherBMI) {
+  console.log(`Mark's BMI (${markBMI}) is higher then John's BMI (${johnBMI})`);
+} else {
+  console.log(
+    `John's BMI (${johnBMI.toFixed(
+      1
+    )}) is higher then Mark's BMI (${markBMI.toFixed(1)})`
+  );
+}
+
+// TASKS
+
+// const country = "Portugal";
+// const continent = "Europe";
+// let population = 5;
+// const isIsland = false;
+// let language = "Polish";
+// const description = `${country} is in ${continent} and its ${population} milion people speak portuguese`;
+
+// if (population > 33) {
+//   console.log(`${country} population is above the average`);
+// } else {
+//   console.log(`${country} is ${33 - population} milion below the average`);
+// }
