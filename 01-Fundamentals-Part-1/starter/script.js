@@ -194,30 +194,50 @@ Text`);
 // const johnMass = 92;
 // const johnHeight = 1.95;
 
-const markMass = 95;
-const markHeight = 1.88;
-const johnMass = 200;
-const johnHeight = 1.76;
+// const markMass = 95;
+// const markHeight = 1.88;
+// const johnMass = 200;
+// const johnHeight = 1.76;
 
-const markBMI = markMass / markHeight ** 2;
-const johnBMI = johnMass / johnHeight ** 2;
-const markHigherBMI = markBMI > johnBMI;
+// const markBMI = markMass / markHeight ** 2;
+// const johnBMI = johnMass / johnHeight ** 2;
+// const markHigherBMI = markBMI > johnBMI;
+
+// // if (markHigherBMI) {
+// //   console.log(`Mark's BMI is higher then Mark's`);
+// // } else {
+// //   console.log(`John's BMI is higher then Mark's`);
+// // }
 
 // if (markHigherBMI) {
-//   console.log(`Mark's BMI is higher then Mark's`);
+//   console.log(`Mark's BMI (${markBMI}) is higher then John's BMI (${johnBMI})`);
 // } else {
-//   console.log(`John's BMI is higher then Mark's`);
+//   console.log(
+//     `John's BMI (${johnBMI.toFixed(
+//       1
+//     )}) is higher then Mark's BMI (${markBMI.toFixed(1)})`
+//   );
 // }
 
-if (markHigherBMI) {
-  console.log(`Mark's BMI (${markBMI}) is higher then John's BMI (${johnBMI})`);
-} else {
-  console.log(
-    `John's BMI (${johnBMI.toFixed(
-      1
-    )}) is higher then Mark's BMI (${markBMI.toFixed(1)})`
-  );
-}
+// TYPE CONVERSION / COERCION
+
+// const inputYear = "1991";
+// console.log(Number(inputYear));
+// console.log(Number(inputYear) + 18);
+
+// console.log(Number("Jonas")); //NaN = not a number (INVALID NUMBER!)
+// console.log(String(23));
+
+// //type coercion
+// console.log("I am " + 23 + " years old"); // Converted to strings (+)
+// console.log("23" - "10" - 3); // Converted to Numbers -)
+// console.log("23" + "10" + 3); // Converted to String  +)
+// console.log("23" * "2"); // converted to Number
+// console.log("23" / "2"); // converted to Number
+
+// let n = "1" + 1; // 11
+// n = n - 1; // 11-1 = 10
+// console.log(n); // 10 ?
 
 // TASKS
 
@@ -233,3 +253,9 @@ if (markHigherBMI) {
 // } else {
 //   console.log(`${country} is ${33 - population} milion below the average`);
 // }
+
+console.log("9" - "5"); // Number 4
+console.log("19" - "13" + "17"); // String'617'
+console.log("19" - "13" + 17); // Number 23
+console.log("123" < 57); // false
+console.log(5 + 6 + "4" + 9 - 4 - 2); // String 1143
