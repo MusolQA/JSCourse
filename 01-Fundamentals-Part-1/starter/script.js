@@ -239,14 +239,94 @@ Text`);
 // n = n - 1; // 11-1 = 10
 // console.log(n); // 10 ?
 
+//FALSY / TRUTHY
+
+// 5 falsy: 0, '', undefined, null, NaN
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("Jonas"));
+// console.log(Boolean({}));
+// console.log(Boolean(""));
+
+// const money = 100; // falsy
+// if (money) {
+//   console.log("Don't spend it all.😂");
+// } else {
+//   console.log("You should get a job");
+// }
+
+// let height = 0; // falsy undefined
+// if (height) {
+//   console.log("YAY! Height is defined");
+// } else {
+//   console.log("Height is undefined");
+// }
+
+// EQUALITY OPERATORS
+
+// const age = "18";
+
+// if (age === 18) console.log("EXACTLY 18 YEARS OLD! (strict)");
+
+// if (age == 18) console.log("EXACTLY 18 YEARS OLD! (loose)");
+
+// const favorite = Number(prompt("What's your favorite number?"));
+// console.log(favorite);
+
+// if (favorite === 23) {
+//   // number to number
+//   console.log("Cool! 23 is an amazing number!");
+// } else if (favorite === 7) {
+//   console.log("7 is also cool number!");
+// } else {
+//   console.log("number is not 23 or 7");
+// }
+
+// if (favorite !== 23) {
+//   console.log("Why not 23");
+// }
+
+//BOOLEAN LOGIC
+
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
+
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
+
+// // if (hasDriversLicense && hasGoodVision) {
+// //   console.log("Sarah is able to drive");
+// // } else {
+// //   console.log("Someone else should drive...");
+// // }
+
+// const isTired = false;
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//   console.log("Sarah is able to drive");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
 // TASKS
 
 // const country = "Portugal";
 // const continent = "Europe";
 // let population = 5;
 // const isIsland = false;
-// let language = "Polish";
+// let language = "english";
 // const description = `${country} is in ${continent} and its ${population} milion people speak portuguese`;
+
+// population > 33
+//   ? console.log("Portugal's population is above average")
+//   : console.log("Portugal's population is below average");
+
+// if (language === "english" && population < 50 && !isIsland) {
+//   console.log("Sarah could live in Portugal");
+// }
 
 // if (population > 33) {
 //   console.log(`${country} population is above the average`);
@@ -254,8 +334,172 @@ Text`);
 //   console.log(`${country} is ${33 - population} milion below the average`);
 // }
 
-console.log("9" - "5"); // Number 4
-console.log("19" - "13" + "17"); // String'617'
-console.log("19" - "13" + 17); // Number 23
-console.log("123" < 57); // false
-console.log(5 + 6 + "4" + 9 - 4 - 2); // String 1143
+// console.log("9" - "5"); // Number 4
+// console.log("19" - "13" + "17"); // String'617'
+// console.log("19" - "13" + 17); // Number 23
+// console.log("123" < 57); // false
+// console.log(5 + 6 + "4" + 9 - 4 - 2); // String 1143
+
+// const numNeighbors = Number(
+//   prompt("How many neighbour countries does your country have?")
+// );
+
+// if (numNeighbors === 1) {
+//   console.log("Only 1 border");
+// } else if (numNeighbors > 1) {
+//   console.log("More than 1 border");
+// } else {
+//   console.log("No borders");
+// }
+
+// CODING CHELLANGE 3
+
+// REQUIRED
+
+// const dolphinsAverage = (96 + 108 + 89) / 3;
+// const koalasAverage = (88 + 91 + 110) / 3;
+
+// if (dolphinsAverage === koalasAverage) {
+//   console.log("Its Draw!");
+// } else if (dolphinsAverage > koalasAverage) {
+//   console.log("Dolphins are winner!");
+// } else {
+//   console.log("Koalas are winner!");
+// }
+
+// BONUS1
+
+// const dolphinsAverage = (55 + 150 + 150) / 3;
+// const koalasAverage = (55 + 150 + 150) / 3;
+
+// console.log(dolphinsAverage);
+// console.log(koalasAverage);
+
+// if (
+//   dolphinsAverage === koalasAverage &&
+//   dolphinsAverage >= 100 &&
+//   koalasAverage >= 100
+// ) {
+//   console.log("Its Draw!");
+// } else if (dolphinsAverage > koalasAverage && dolphinsAverage > 100) {
+//   console.log("Dolphins are winner!");
+// } else if (koalasAverage > dolphinsAverage && koalasAverage > 100) {
+//   console.log("Koalas are winner!");
+// } else {
+//   console.log("No result!");
+// }
+
+// SWITCH
+
+// const day = "thursday";
+
+// switch (day) {
+//   case "monday":
+//     console.log("Plan course structure.");
+//     console.log(`Its ${day}. Go to coding meetup.`);
+//     break;
+//   case "tuesday":
+//     console.log("Prepare theory videos");
+//     console.log(`Its ${day}. Go to coding meetup.`);
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("Write code examples");
+//     break;
+//   case "friday":
+//     console.log("Record videos");
+
+//   case "saturday":
+//   case "sunday":
+//     console.log("Weekend, drink");
+//     break;
+//   default:
+//     console.log("Not a valid data");
+// }
+
+// if (day === "monday") {
+//   console.log("Plan course structure.");
+//   console.log(`Its ${day}. Go to coding meetup.`);
+// } else if (day === "tuesday") {
+//   console.log("Prepare theory videos");
+//   console.log(`Its ${day}. Go to coding meetup.`);
+// } else if (day === "wednesday" || day === "thursday") {
+//   console.log("Write code examples");
+// } else if (day === "friday") {
+//   console.log("Record videos");
+// } else if (day === "saturday" || day === "sunday") {
+//   console.log("Weekend, drink");
+// } else {
+//   console.log("Not a valid data");
+// }
+
+// const language = "polish";
+
+// switch (language) {
+//   case "mandarin":
+//   case "chinese":
+//     console.log("'MOST number of native speakers!");
+//     break;
+//   case "spanish":
+//     console.log("2nd place in number of native speakers'");
+//     break;
+//   case "english":
+//     console.log("3rd place");
+//     break;
+//   case "hindi":
+//     console.log("'5th most spoken language'");
+//     break;
+//   default:
+//     console.log("'Great language too :D");
+// }
+
+// expression statement
+
+// expression = create a value\
+// statement = doesn't create value
+
+// the conditional ternary operation
+
+// const age = 29;
+// // age >= 18
+// //   ? console.log("i like to drink wine 🍷")
+// //   : console.log("i like to drink water 💦");
+
+// // const drink = age >= 18 ? "wine 🍷" : "water 💦";
+// // console.log(drink);
+
+// // let drink2;
+
+// // if (age >= 18) {
+// //   drink2 = "wine";
+// // } else {
+// //   drink2 = "water";
+// // }
+
+// // console.log(drink2);
+
+// console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💦"}`);
+
+// # CODING CHALLENGE
+
+// const billValue = 275;
+
+// // billValue >= 50 && billValue <= 300
+// //   ? console.log(
+// //       `The bill was ${billValue}, the tip was ${
+// //         billValue * 0.15
+// //       }, the total value ${billValue + billValue * 0.15}`
+// //     )
+// //   : console.log(
+// //       `The bill was ${billValue}, the tip was ${
+// //         billValue * 0.2
+// //       }, the total value ${billValue + billValue * 0.2}`
+// //     );
+
+// const tip =
+//   billValue >= 50 && billValue <= 300 ? billValue * 0.15 : billValue * 0.2;
+// console.log(
+//   `The bill was ${billValue}, the tip was ${tip}, the total value ${
+//     billValue + tip
+//   }`
+// );
