@@ -503,3 +503,5 @@ Text`);
 //     billValue + tip
 //   }`
 // );
+
+"use strict";
